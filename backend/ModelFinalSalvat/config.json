@@ -1,0 +1,46 @@
+{
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "do_lower_case": 1,
+  "do_remove_accents": 0,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "id2label": {
+    "0": "offensive",
+    "1": "none",
+    "2": "sexism",
+    "3": "body_shaming",
+    "4": "homophobia",
+    "5": "racism",
+    "6": "abilitism"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "label2id": {
+    "abilitism": 6,
+    "body_shaming": 3,
+    "homophobia": 4,
+    "none": 1,
+    "offensive": 0,
+    "racism": 5,
+    "sexism": 2
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "problem_type": "single_label_classification",
+  "torch_dtype": "float32",
+  "transformers_version": "4.51.3",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 37788
+}
