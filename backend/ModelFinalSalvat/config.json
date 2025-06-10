@@ -15,8 +15,8 @@
     "1": "none",
     "2": "sexism",
     "3": "body_shaming",
-    "4": "homophobia",
-    "5": "racism",
+    "4": "homofobie",
+    "5": "rasism",
     "6": "abilitism"
   },
   "initializer_range": 0.02,
@@ -24,10 +24,10 @@
   "label2id": {
     "abilitism": 6,
     "body_shaming": 3,
-    "homophobia": 4,
+    "homofobie": 4,
     "none": 1,
     "offensive": 0,
-    "racism": 5,
+    "rasism": 5,
     "sexism": 2
   },
   "layer_norm_eps": 1e-12,
@@ -39,7 +39,7 @@
   "position_embedding_type": "absolute",
   "problem_type": "single_label_classification",
   "torch_dtype": "float32",
-  "transformers_version": "4.51.3",
+  "transformers_version": "4.52.4",
   "type_vocab_size": 2,
   "use_cache": true,
   "vocab_size": 37788

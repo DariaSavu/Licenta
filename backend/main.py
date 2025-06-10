@@ -21,7 +21,7 @@ def predict(text):
 
     return pred_label
 
-labels = ['offensive', 'none', 'sexism', 'body_shaming', 'homophobia', 'racism', 'abilitism']
+labels = ['offensive', 'none', 'sexism', 'body_shaming', 'homofobia', 'rasism', 'abilitism']
 
 @app.route("/clasificare", methods=["POST"])
 def clasificare():

@@ -2,25 +2,19 @@ import { Button, Container, TextField, Typography, Stack, CircularProgress } fro
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import { useTheme } from "@mui/material/styles";
-import useAuthState from "../components/AuthState";
 import axios from "axios";
 
 interface Props {
   setAuth: (value: boolean) => void;
 }
 
-const Home: React.FC<Props> = ({ setAuth }) => {
+const Home: React.FC = () => {
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<string | null>(null);
   const navigate = useNavigate();
   const theme = useTheme();
-  const [isAuthenticated, setIsAuthenticated] = useAuthState();
 
-  const handleLogout = () => {
-    setAuth(false);
-    navigate("/");
-  };
 
   const handleSubmit = async () => {
     setLoading(true);
@@ -66,18 +60,6 @@ const Home: React.FC<Props> = ({ setAuth }) => {
             >
               Clasifică
             </Button>
-            {isAuthenticated && (
-              <Button
-                variant="outlined"
-                onClick={handleLogout}
-                sx={{
-                  borderColor: theme.palette.secondary.main,
-                  color: theme.palette.secondary.main,
-                }}
-              >
-                Logout
-              </Button>
-            )}
           </Stack>
         )}
 
